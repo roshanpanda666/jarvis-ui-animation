@@ -1,0 +1,192 @@
+body{
+    
+    background-image: linear-gradient(to right top, #000000, #11020a, #190615, #1c0a20, #1a102d, #1b143b, #17184a, #071d5a, #191f6d, #2e1d7f, #46178f, #60009d);
+}
+
+.container{
+    border: 1px solid rgb(128, 4, 211);
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    -webkit-box-shadow: 1px 3px 62px 1px rgb(210, 0, 229);
+    -moz-box-shadow: 1px 3px 62px 1px rgb(134, 0, 73);
+    box-shadow: 1px 3px 62px 1px rgb(167, 0, 213);
+    background-color: rgb(56, 56, 56);
+
+background-image: linear-gradient(to right top, #000000, #210413, #330426, #420040, #480061, #4d0074, #500188, #4f079d, #6411a0, #761ca2, #8726a5, #9631a8);
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+
+}
+
+.father{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50rem;
+    
+}
+
+.innerround{
+    height: 30%;
+    width: 30%;
+    border: 2px solid rgb(115, 0, 255);
+    border-radius: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left-style:dashed;
+    animation: rotate1 5s infinite;
+    animation-play-state: paused;
+
+    
+}
+.innerround2{
+    height: 50%;
+    width: 50%;
+    border: 1px solid rgb(245, 0, 253);
+    border-radius: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-play-state: paused;
+    
+}
+.layer{
+    border: 5px solid rgb(128, 4, 211);
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    position: absolute;
+    border-right-style:dashed ;
+    animation: mymove 13s infinite;
+    -webkit-box-shadow: 1px 3px 30px 6px rgba(36,30,117,1);
+    -moz-box-shadow: 1px 3px 30px 6px rgba(36,30,117,1);
+    box-shadow: 1px 3px 30px 6px rgba(36,30,117,1);
+    animation-play-state: paused;
+
+    
+    
+}
+
+.layer4{
+    border: 5px solid rgb(6, 6, 246);
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    position: absolute;
+    border-left-style:dashed ;
+    animation: mymove 5s infinite;
+    -webkit-box-shadow: 1px 3px 30px 6px rgba(36,30,117,1);
+    -moz-box-shadow: 1px 3px 30px 6px rgba(36,30,117,1);
+    box-shadow: 1px 3px 30px 6px rgba(36,30,117,1);
+    animation-play-state: paused;
+}
+.layer2{
+    border: 2px solid rgb(211, 4, 187);
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    position: absolute;
+    border-style:dashed ;
+    animation: mymove 70s infinite;
+    animation-play-state: paused;
+}
+
+.layer3{
+    border: 2px solid rgb(128, 4, 211);
+    height: 370px;
+    width: 370px;
+    border-radius: 100%;
+    position: absolute;
+    border-right-style:dashed;
+    animation: mymove 1s infinite;
+    animation-play-state: paused;
+}
+.fatherlayer{
+    border: 2px solid rgb(128, 4, 211);
+    height: 670px;
+    width: 670px;
+    border-radius: 100%;
+    position: absolute;
+    border-right-style:dashed;
+    animation: mymove 4s infinite;
+ 
+    -webkit-box-shadow: 1px 3px 62px 1px rgb(0, 4, 229);
+    -moz-box-shadow: 1px 3px 62px 1px rgb(51, 0, 134);
+    box-shadow: 1px 3px 62px 1px rgb(54, 9, 160);
+    animation-play-state: paused;
+}
+button{
+    height: 40%;
+    width: 40%;
+    border-radius: 100%;
+    background-color: purple;
+    border-style: none;
+
+}
+@keyframes mymove {
+    50% {transform: rotate(120deg);}
+
+    
+  }
+  
+
+  @keyframes rotate1 {
+    50% {transform: rotate(220deg);}
+    
+  }
+
+
+@media only screen and (max-width: 500px) {
+
+    .container{
+        border: 1px solid rgb(128, 4, 211);
+        height: 100px;
+        width: 100px;
+
+    
+    }
+    
+
+    .innerround{
+        height: 30%;
+        width: 30%;
+        
+    }
+
+    .layer{
+        height: 200px;
+        width: 200px;
+        
+    }
+    
+    .layer4{
+
+        height: 340px;
+        width: 340px;
+    }
+    .layer2{
+
+        height: 300px;
+        width: 300px;
+
+    }
+    
+    .layer3{
+        height: 270px;
+        width: 270px;
+
+    }
+    .fatherlayer{
+        
+        height: 370px;
+        width: 370px;
+
+    }
+
+  }
